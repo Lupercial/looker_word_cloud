@@ -3,7 +3,7 @@
   "organization": "YourOrg",
   "description": "Custom sentiment-colored word cloud",
   "resources": {
-    "js": ["https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.min.js"]
+    "js": ["https://raw.githubusercontent.com/Lupercial/looker_word_cloud/refs/heads/main/index.js"]
   },
   "style": {
     "wordColor": {
