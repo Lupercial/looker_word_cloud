@@ -1,19 +1,34 @@
 {
-  "name": "Word Cloud",
+  "name": "Sentiment Word Cloud",
   "organization": "YourOrg",
-  "description": "Custom sentiment-colored word cloud",
+  "description": "Custom sentiment-colored word cloud visualization for Looker Studio",
+  "logoUrl": "https://raw.githubusercontent.com/Lupercial/looker_word_cloud/main/logo.png",
+  "supportUrl": "https://github.com/Lupercial/looker_word_cloud/issues",
   "resources": {
-    "js": ["https://raw.githubusercontent.com/Lupercial/looker_word_cloud/refs/heads/main/index.js"]
+    "js": [
+      "https://cdn.jsdelivr.net/npm/d3@7",
+      "https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.min.js",
+      "https://raw.githubusercontent.com/Lupercial/looker_word_cloud/main/wordcloud.js"
+    ],
+    "css": [
+      "https://raw.githubusercontent.com/Lupercial/looker_word_cloud/main/style.css"
+    ]
   },
   "style": {
     "wordColor": {
       "default": "#333",
-      "description": "Base color for words"
+      "description": "Base color for neutral words"
+    },
+    "positiveColor": {
+      "default": "#2ecc71",
+      "description": "Color for positive sentiment"
+    },
+    "negativeColor": {
+      "default": "#e74c3c",
+      "description": "Color for negative sentiment"
     }
   },
-  "data": {
-    "word": "string",
-    "frequency": "number",
-    "sentiment": "string"
-  }
-}
+  "data": [
+    {
+      "id": "word",
+      "name": "Word"
