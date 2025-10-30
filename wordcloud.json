@@ -1,0 +1,19 @@
+{
+  "name": "Word Cloud",
+  "organization": "YourOrg",
+  "description": "Custom sentiment-colored word cloud",
+  "resources": {
+    "js": ["https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.min.js"]
+  },
+  "style": {
+    "wordColor": {
+      "default": "#333",
+      "description": "Base color for words"
+    }
+  },
+  "data": {
+    "word": "string",
+    "frequency": "number",
+    "sentiment": "string"
+  }
+}
